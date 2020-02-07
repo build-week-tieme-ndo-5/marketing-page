@@ -1,8 +1,146 @@
-/* footer */
+/* Media Query for Mobile Devices */
 footer {
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
-    background-color: #406e1c;
-    text-align: center;
-  }
+	padding: 20px;
+	margin-top: 20px;
+	color: white;
+	background-color: #2f3b33;
+	text-align: center;
+}
+.foot {
+	display: flex;
+	justify-content: space-evenly;
+}
+.foot-items {
+	h3 {
+		margin: 20px;
+		font-size: 20px;
+	}
+}
+.links-items {
+	li {
+		display: inline;
+		margin: 10px;
+	}
+}
+.partners-items {
+	span {
+		margin: 10px;
+	}
+}
+.copyright {
+	margin-top: 50px;
+}
+header {
+	background: #2f3b33;
+	color: whitesmoke;
+	padding-top: 20px;
+	min-height: 70px;
+	a {
+		color: whitesmoke;
+		text-decoration: none;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	li {
+		display: inline;
+		padding: 0 20px;
+		cursor: pointer;
+		&:hover {
+			color: #362c1d;
+			transition: all 0.5s ease;
+			background: #c9c94b;
+			border: 2px solid #c9c94b;
+			padding: 5px 15px;
+			border-radius: 5px;
+		}
+	}
+	#branding {
+		float: left;
+		h1 {
+			font-size: 30px;
+			font-weight: bold;
+			margin: 7px;
+		}
+	}
+	nav {
+		float: right;
+		margin-top: 10px;
+	}
+}
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.screen-height {
+	min-height: 100vh;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+.button1 {
+	height: 33px;
+	background: #dfa563;
+	padding: 5px 10px;
+	color: #1b160f;
+	border: 2px solid #dfa563;
+	border-radius: 5px;
+}
+.button2 {
+	height: 33px;
+	border: 2px solid #dfa563;
+	padding: 5px 10px;
+	color: azure;
+	border-radius: 5px;
+}
+body {
+	font: 16px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #ced19f;
+}
+@media (max-width: 500px) {
+	.foot {
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+	.links-items {
+		display: flex;
+		flex-direction: column;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+		#branding {
+			text-align: center;
+			float: none;
+			h1 {
+				font-size: 20px;
+				margin: 0 0 0 20px;
+			}
+		}
+		nav {
+			margin: 15px 0;
+			float: none;
+		}
+		li {
+			display: flex;
+			flex-direction: column;
+			padding: 0 10px;
+			cursor: pointer;
+			justify-content: center;
+			align-items: center;
+			margin: 10px;
+		}
+	}
+	.button1 {
+		margin-left: 10px;
+	}
+	.container {
+		width: 100%;
+		margin: auto;
+		overflow: hidden;
+	}
+}
